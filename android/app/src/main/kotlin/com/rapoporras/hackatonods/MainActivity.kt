@@ -1,4 +1,4 @@
-package com.example.hackatonods
+package com.rapoporras.hackatonods
 
 import io.flutter.embedding.android.FlutterActivity
 

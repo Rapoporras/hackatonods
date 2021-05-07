@@ -67,11 +67,12 @@ class _ConocenosState extends State<Conocenos> {
                           width: 60,
                           height: 60,
                           decoration: new BoxDecoration(
+                              border: Border.all(width: 1, color: Colors.grey),
                               shape: BoxShape.circle,
                               image: new DecorationImage(
                                   fit: BoxFit.fill,
                                   image: new NetworkImage(
-                                      "https://i.imgur.com/BoN9kdC.png")))),
+                                      "https://firebasestorage.googleapis.com/v0/b/rapoporras-2c44a.appspot.com/o/logo_a.png?alt=media&token=d45ff139-fe65-4dff-8e37-5c6171669b4b")))),
                       Container(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.center,

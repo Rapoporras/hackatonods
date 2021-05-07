@@ -47,7 +47,21 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Hackaton"),
+          centerTitle: true,
+          title: Container(
+              // color: Colors.white,
+              child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                "assets/images/logo_a.png",
+                // height: 100.0,
+                width: 60.0,
+              ),
+              Text("Save the water")
+            ],
+          )),
           backgroundColor: Color(0xff022e5f),
         ),
         bottomNavigationBar: CurvedNavigationBar(

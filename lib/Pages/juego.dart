@@ -23,13 +23,16 @@ class Juego extends StatefulWidget {
 class _JuegoState extends State<Juego> {
   bool star = false;
 
-  // String gameStart(){
-  //   String imagen = "";
-  //   if(star ==false){
-  //     imagen
-  //   }
+  String gameStart() {
+    String imagen = "";
+    if (star == false) {
+      imagen = "assets/images/game_stop.png";
+    } else {
+      imagen = "assets/images/game.png";
+    }
+    return imagen;
+  }
 
-  // }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -84,7 +87,7 @@ class _JuegoState extends State<Juego> {
                 ],
               ),
               child: Image.asset(
-                "assets/images/game.png",
+                gameStart(),
                 // height: 500.0,
                 width: double.infinity,
               ),
@@ -98,7 +101,7 @@ class _JuegoState extends State<Juego> {
                     color: Color(0xff97ba3c),
                     borderRadius: BorderRadius.all(Radius.circular(20)),
                   ),
-                  child: Text("Marcar como Completado"),
+                  child: Text("Comenzar Partida"),
                 ),
                 onTap: () {
                   setState(() {

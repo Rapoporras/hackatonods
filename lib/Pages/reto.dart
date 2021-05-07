@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:calendar_timeline/calendar_timeline.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:intl/date_symbol_data_local.dart';
+import 'package:intl/intl.dart';
 
 class Reto extends StatefulWidget {
   Reto({Key key, this.title}) : super(key: key);
@@ -37,6 +39,7 @@ class _RetoState extends State<Reto> {
   }
 
   void _resetSelectedDate() {
+    initializeDateFormatting('es_ES', null);
     _selectedDate = DateTime.now();
   }
 
